@@ -1,0 +1,140 @@
+/*
+   _____ ______ _   _ ______ _____            _      
+  / ____|  ____| \ | |  ____|  __ \     /\   | |     
+ | |  __| |__  |  \| | |__  | |__) |   /  \  | |     
+ | | |_ |  __| | . ` |  __| |  _  /   / /\ \ | |     
+ | |__| | |____| |\  | |____| | \ \  / ____ \| |____ 
+  \_____|______|_| \_|______|_|  \_\/_/    \_\______|
+                                                     
+                                                     
+*/
+html, body {
+  overflow-y: hidden;
+}
+body{
+  background: #01011e;
+}
+::-webkit-scrollbar {
+  margin: 0;
+  height: 0px;
+  width: 0px;
+  background: rgba(0,0,0,.75);
+  transform: scaleX(-100vw);
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,.75);
+}
+/*
+  _____  ______ _____   _____  ____  
+ |  __ \|  ____|  __ \ / ____|/ __ \ 
+ | |__) | |__  | |__) | (___ | |  | |
+ |  ___/|  __| |  _  / \___ \| |  | |
+ | |    | |____| | \ \ ____) | |__| |
+ |_|    |______|_|  \_\_____/ \____/ 
+                                     
+                                     
+*/
+header.masthead{
+  background: url("../img/bg_ok.webp");
+}
+.bg-image {
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+/* titres */
+.perso-shadow {
+  text-shadow: 1px 3px 2px rgba(255,255,255,0.2);
+  color: #fff;
+}
+hr {
+  border: 2px #fff solid;
+}
+/* prompteur */
+.paragraphe {
+  scroll-behavior: smooth;
+  font-family: New Times Roman;
+  font-size: 26px;
+  background: rgba(188,188,188,0.2);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height:50vh;
+  max-height: 50vh;
+  min-height: 50vh;
+  scroll-behavior: smooth;
+  color: #fff;
+  line-height: 25px;
+}
+/* animation pluie */
+.fa-tint {
+  color: rgb(160,160,160);
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards;
+}
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+/* The cards */
+#presentationCartes {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: url("../img/home.webp");
+  background-position: bottom left;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.carte {
+  width: 200px;
+  height: 250px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+  text-align: center;
+  margin-top: 180px;
+}
+.carte h4 {
+  margin: 10px;
+  color: rgb(255,255,255);
+}
+.carte img {
+  padding-top: 10px;
+  margin: 0px 5%;
+  text-align: center;
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+  padding-top: 0px;
+}
+.carte img:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+}
+#element {
+  position: relative;
+  height: 150px;
+  bottom: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
